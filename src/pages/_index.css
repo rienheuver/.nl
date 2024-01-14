@@ -1,0 +1,151 @@
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--size-7);
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-10);
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-9);
+  line-height: 1;
+
+  .sub {
+    font-size: 3rem;
+    font-family: var(--font-sans);
+  }
+}
+
+menu {
+  display: flex;
+  gap: var(--size-7);
+  justify-content: center;
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: var(--font-size-3);
+
+    &:hover {
+      color: var(--highlight);
+    }
+  }
+}
+
+#it {
+  padding-block: var(--size-2);
+  text-align: center;
+}
+
+#over-mij {
+  position: relative;
+  gap: var(--size-7);
+
+  em {
+    text-align: center;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: calc(-1 * var(--size-11));
+  opacity: 0.1;
+  grid-column: full-width;
+  width: 80%;
+  left: 10%;
+}
+
+.p-and-image {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  gap: var(--size-8);
+
+  img {
+    max-height: 6rem;
+  }
+}
+
+#diensten {
+  row-gap: var(--size-8);
+}
+
+.services-grid {
+  grid-column: breakout;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--size-8);
+  grid-auto-rows: 1fr;
+}
+
+.card {
+  padding: var(--size-5);
+  box-shadow: var(--shadow-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-3);
+  background-color: var(--surface-2);
+  border-bottom: 5px solid var(--highlight);
+
+  img {
+    max-width: 64px;
+  }
+
+  .images {
+    display: flex;
+    gap: var(--size-5);
+  }
+}
+
+#media {
+  row-gap: var(--size-8);
+}
+
+.media-grid {
+  grid-column: breakout;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--size-5);
+}
+
+#contact {
+  place-items: center;
+  row-gap: var(--size-7);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-7);
+  max-width: 400px;
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: var(--font-size-4);
+
+    &:hover {
+      color: var(--highlight);
+    }
+  }
+}
+
+.contact-row {
+  display: flex;
+  gap: var(--size-3);
+  align-items: center;
+}
+
+#copyright {
+  text-align: center;
+  padding-block: var(--size-3);
+}

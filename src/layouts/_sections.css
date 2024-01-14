@@ -1,0 +1,36 @@
+@media screen and (min-width: 1200px) {
+  section,
+  footer {
+    --max-content-width: 900px;
+    --max-breakout-width: 1200px;
+
+    --breakout-size: calc(
+      (var(--max-breakout-width) - var(--max-content-width)) / 2
+    );
+
+    display: grid;
+    grid-template-columns:
+      [full-width-start]
+      minmax(var(--size-3), 1fr)
+      [breakout-start]
+      minmax(0, var(--breakout-size))
+      [content-start]
+      min(100% - var(--size-3) * 2, var(--max-content-width))
+      [content-end]
+      minmax(0, var(--breakout-size))
+      [breakout-end]
+      minmax(var(--size-3), 1fr)
+      [full-width-end];
+    align-items: center;
+
+    > * {
+      grid-column: content;
+    }
+
+    padding-block: var(--size-10);
+
+    &:nth-child(even) {
+      background-color: var(--block-color);
+    }
+  }
+}

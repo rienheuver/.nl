@@ -1,0 +1,49 @@
+@import "@riskchallenger/open-components/main.css";
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+@import "_sections.css";
+
+html {
+  --brand: oklch(24% 0.1 258);
+  --highlight: oklch(75% 0.17 55);
+  --block-color: oklch(30% 0 0 / 75%);
+  --title-font: "Overlock", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--brand);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  max-inline-size: none;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  max-inline-size: none;
+}
+
+a,
+a:visited {
+  color: var(--highlight);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--text-color);
+  }
+}
