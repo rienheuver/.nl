@@ -1,3 +1,15 @@
+section,
+footer {
+  display: grid;
+
+  padding-inline: var(--size-7);
+  padding-block: var(--size-10);
+
+  &:nth-child(even) {
+    background-color: var(--block-color);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   section,
   footer {
@@ -8,7 +20,6 @@
       (var(--max-breakout-width) - var(--max-content-width)) / 2
     );
 
-    display: grid;
     grid-template-columns:
       [full-width-start]
       minmax(var(--size-3), 1fr)
@@ -25,12 +36,6 @@
 
     > * {
       grid-column: content;
-    }
-
-    padding-block: var(--size-10);
-
-    &:nth-child(even) {
-      background-color: var(--block-color);
     }
   }
 }
