@@ -72,9 +72,13 @@ menu {
   em {
     text-align: center;
   }
+
+  > * {
+    position: relative;
+  }
 }
 
-.logo {
+#over-mij .logo {
   position: absolute;
   top: calc(-1 * var(--size-11));
   opacity: 0.1;
