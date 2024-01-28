@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import "lightgallery/css/lightgallery-bundle.min.css";
 ---
 
 <style>
@@ -181,6 +182,11 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <section id="media">
+    <script>
+      import lightGallery from "lightgallery";
+
+      lightGallery(document.querySelector(".media-grid")!, { download: false });
+    </script>
     <h2>Foto's & video's</h2>
     <div class="media-grid">
       <img
