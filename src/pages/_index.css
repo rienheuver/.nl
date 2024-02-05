@@ -63,6 +63,7 @@ menu {
 #it {
   padding-block: var(--size-2);
   text-align: center;
+  z-index: 1;
 }
 
 #over-mij {
