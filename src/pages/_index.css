@@ -103,6 +103,12 @@ menu {
     max-height: 6rem;
   }
 
+  .images {
+    display: flex;
+    gap: var(--size-5);
+    align-items: center;
+  }
+
   @media screen and (max-width: 500px) {
     grid-template-columns: auto;
 
